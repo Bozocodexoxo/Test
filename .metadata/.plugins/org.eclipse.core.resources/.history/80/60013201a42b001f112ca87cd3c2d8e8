@@ -1,0 +1,11 @@
+package exp.customexception;
+
+public class Customexception extends Exception {
+	
+	
+	public void invalidname(String sts) {
+		
+	}
+
+}
+

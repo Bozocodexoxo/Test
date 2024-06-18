@@ -1,0 +1,28 @@
+package com.vamshi.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.vamshi.services.Ipls;
+import com.vamshi.services.Odis;
+
+@RestController
+public class Matchshower {
+	@Autowired
+	Odis odis;
+	@Autowired
+	Ipls ipl;
+	@GetMapping("/odi")
+	public int getmatchcount(int count) {
+		int number=odis.noofodis(count);
+		return  number;
+	}
+	@GetMapping("/ipls")
+	public int getmatchcountipl(int count) {
+		int number=ipl.noofipls(count);
+		return  number;
+
+
+}
+}

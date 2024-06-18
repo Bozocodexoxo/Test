@@ -1,0 +1,13 @@
+
+public class Twothreadrunata {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Thread t=new Thread();
+Thread t2=new Thread();
+t.start();
+t2.start();
+System.out.println(t.getName()+t2.getName());
+	}
+
+}

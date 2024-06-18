@@ -1,0 +1,5 @@
+package exp.customexception;
+
+public class Customexception {
+
+}
